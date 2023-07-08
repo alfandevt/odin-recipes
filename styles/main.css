@@ -58,7 +58,7 @@ ul {
 
 .hero h2 {
   position: absolute;
-  font-size: 28px;
+  font-size: 24px;
   width: 90%;
   height: 34px;
   text-align: center;
@@ -69,6 +69,12 @@ ul {
   margin: auto;
   color: #fefefe;
   font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+  .hero h2 {
+    height: 100px;
+  }
 }
 
 .hero img {

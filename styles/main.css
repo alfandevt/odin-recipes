@@ -1,3 +1,16 @@
+body {
+  background-color: #565656;
+}
+
+main {
+  background-color: #f1f1f1;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 1px #f1f1f1, 0px 0px 12px 2px #464646;
+  border-radius: 3px;
+}
+
 h1 {
   text-align: center;
   font-size: 48px;
@@ -22,6 +35,14 @@ ul {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #696969;
+  margin-bottom: 43px;
+}
+
+.hero img {
+  border-radius: 10px;
 }
 
 .backdrop {
@@ -37,7 +58,7 @@ ul {
 
 .hero h2 {
   position: absolute;
-  font-size: 32px;
+  font-size: 28px;
   width: 90%;
   height: 34px;
   text-align: center;
@@ -61,6 +82,7 @@ ul {
 
 .recipes-section h2 {
   text-align: center;
+  padding-top: 23px;
 }
 
 .recipe-list {
@@ -71,20 +93,21 @@ ul {
 }
 
 .recipe-list-item {
-  width: 33%;
   height: 150px;
   margin: 20px auto;
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  box-shadow: 2px 2px 4px #464646;
+  border-radius: 2px;
 }
 
 .recipe-list-item .backdrop {
   opacity: 0.3;
 }
 
-.recipe-list-item:hover .backdrop{
+.recipe-list-item:hover .backdrop {
   opacity: 0.6;
 }
 
@@ -96,7 +119,6 @@ ul {
   transform: translateY(20px);
   opacity: 1;
 }
-
 
 .recipe-image {
   max-width: 100%;
@@ -110,7 +132,7 @@ ul {
   width: 100%;
   text-align: center;
   color: #fefefe;
-  font-size: 24px;
+  font-size: 22px;
   top: 50%;
   left: 0;
   right: 0;
@@ -124,7 +146,7 @@ ul {
 .detail-button {
   transform: translateY(20px);
   display: block;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   padding: 6px 12px;
   width: 70px;
   font-size: 16px;
